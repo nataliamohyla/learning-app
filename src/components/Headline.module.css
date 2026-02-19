@@ -1,0 +1,81 @@
+.headlineContainer{
+     display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+  background-color: rgba(117, 181, 224, 0.258);
+height: 48px;
+  border-bottom: 1px solid #206cdd84;
+
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-items: center;
+}
+.icon{
+    width: 22px;
+    height: 22px;
+    margin: 2px;
+}
+.logo{
+   position: absolute;
+   left: 28px;
+}
+.link {
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: #030303;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #5d14b0;
+}
+
+.active {
+  color: #48f42d;
+}
+.loginRegister{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+     position: absolute;
+    right: 158px;
+}
+.loginLink{
+   
+     font-size: 16px;
+  line-height: 180%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  color: #030303;
+  transition: color 0.3s;
+
+}
+.loginLink:hover  {
+  color: #5d14b0;
+}
+.registerButton{ 
+  border-radius: 12px;
+padding: 8px;
+width: 146px;
+height: 38px;
+    background-color: #1a1a1b;
+    color: white;
+    border: none;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
