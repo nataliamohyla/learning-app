@@ -1,6 +1,6 @@
 import styles from './Home.module.css';
 import imaging from "../../public/block.svg";
-
+import {useNavigate} from "react-router-dom";
 
 const statsData = [
   { number: "32,000+", label: "Experienced tutors" },
@@ -9,7 +9,7 @@ const statsData = [
   { number: "200+", label: "Tutor nationalities" },
 ];
 const Home = () => {
-
+const navigate = useNavigate();
     return (
         < div className={styles.homeContainer}>
            <div className={styles.content}>
@@ -17,7 +17,7 @@ const Home = () => {
             <p> Embark on an Exciting Language Journey with Expert Language
                 Tutors: Elevate your language proficiency to new heights by
                     connecting with highly qualified and experienced tutors.</p>
-                 <button type='button' className={styles.button}>Get Started</button>
+                 <button type='button' className={styles.button} onClick={() => navigate('/teachers')}>Get Started</button>
             </div>
              
             <div className={styles.imaging}>

@@ -24,6 +24,12 @@ width: 267px;
 height: 60px;
 background: #f4c550;
 color: #121417;
+ font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+ 
 }
 .imaging{
     border-radius: 30px;

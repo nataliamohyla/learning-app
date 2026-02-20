@@ -3,9 +3,14 @@ import clsx from "clsx";
 import Logo from "../../public/LearnLingo.svg";
 import styles from "./Headline.module.css";
 import icon from "../../public/ukraine (1).svg";
+import { useState } from "react";
+import RegisterModal from "./RegisterModal";
 
-export const Headline =() => {
+
+export const Headline = () => {
+    const [isOpen, setIsOpen] = useState(false);
     return (
+        <>
         <header className={styles.headlineContainer}>
             <div className={styles.logo}>
                 <img src={icon} alt="Ukraine Icon" className={styles.icon} />
@@ -27,9 +32,12 @@ export const Headline =() => {
             </nav>
             <div className={styles.loginRegister}>
                 <NavLink to="/Login" className={styles.loginLink} >Log in</NavLink>
-                <button className={styles.registerButton}>Register</button>
-            </div>
-                
+                <button className={styles.registerButton} onClick={() => setIsOpen(true)}>Register</button>
+            </div>      
         </header>
+        {isOpen && (
+        <RegisterModal onClose={() => setIsOpen(false)} />
+            )}
+            </>
     );
 }
